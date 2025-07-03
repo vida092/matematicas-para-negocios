@@ -1,0 +1,233 @@
+/* Estilos generales (si los tienes, añade aquí si aún no los tienes en tu archivo) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Un fondo general muy claro, casi blanco */
+}
+
+/* Estilos para el Header - Opción 1: Oscuro y Vibrante (Ajustado a tus nuevos colores) */
+header {
+    background-color: #2c3e50; /* Un azul oscuro/grisáceo, profundo */
+    color: #e0f2f1; /* Todavía un color claro para el texto principal, puedes ajustarlo si prefieres otro de tus nuevos colores claros */
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 5px;
+    color: #4eb3de; /* Tu color1: azul brillante para el título principal */
+    text-shadow:
+        0 0 10px #4eb3de,
+        0 0 20px #4eb3de,
+        0 0 30px rgba(78, 179, 222, 0.7); /* Sombra difusa con color1 */
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #8de0a6; /* Tu color2: verde claro para el subtítulo */
+    margin-top: 5px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+---
+
+/* Estilos para el Navbar (Ajustado a tus nuevos colores) */
+nav {
+    background-color: #34495e; /* Un azul grisáceo un poco más claro que el header */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #544868; /* Tu color3: amarillo suave para los enlaces del nav */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #4eb3de; /* Tu color1: azul brillante al pasar el mouse */
+    color: #ffffff; /* Texto blanco puro al pasar el mouse */
+}
+
+---
+
+/* Estilos para la sección "About me" (Ajustado a tus nuevos colores) */
+#seccion1 {
+    background-color: #212121; /* Un negro/gris muy oscuro para el fondo, que haga resaltar los colores neón */
+    color: #fcf09f; /* Tu color3: amarillo suave para el texto */
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto; /* Centrar y margen */
+    max-width: 900px; /* Ancho máximo para la sección */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra más sutil en este fondo oscuro */
+}
+
+#titulo2 {
+    color: #ffffff; /* Color del texto blanco puro */
+    text-align: center;
+    margin-bottom: 15px;
+    /* Efecto de neón con tus colores */
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #4eb3de, /* Tu color1: Azul como el principal color de neón */
+        0 0 82px #4eb3de,
+        0 0 92px #4eb3de,
+        0 0 102px #4eb3de,
+        0 0 151px #4eb3de;
+}
+
+#descripcion {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#images-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#images-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #8de0a6; /* Tu color2: verde claro para el borde de la imagen */
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#images-container img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 20px rgba(78, 179, 222, 0.8); /* Sombra brillante usando tu color1 */
+}
+
+---
+
+/* Estilos para la sección de Bienvenida (Ajustado a tus nuevos colores) */
+#bienvenida {
+    background-color: #fcf09f; /* Tu color3: amarillo suave para el fondo de bienvenida */
+    color: #212121; /* Texto oscuro para alto contraste */
+    padding: 40px 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#bienvenida h2 {
+    font-size: 2.8em;
+    color: #de528c; /* Tu color5: Rosa/morado vibrante para el título de bienvenida */
+    margin-bottom: 20px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#bienvenida p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Puedes definir tus clases de color directamente aquí si lo deseas, para usos futuros */
+/*
+.color1 { color: #4eb3de; }
+.bg-color1 { background-color: #4eb3de; }
+.color2 { color: #8de0a6; }
+.bg-color2 { background-color: #8de0a6; }
+.color3 { color: #fcf09f; }
+.bg-color3 { background-color: #fcf09f; }
+.color4 { color: #f27c7c; }
+.bg-color4 { background-color: #f27c7c; }
+.color5 { color: #de528c; }
+.bg-color5 { background-color: #de528c; }
+*/
+
+img {
+    size-adjust: 50%;
+}
+
+
+/* From Uiverse.io by bhaveshxrawat */ 
+.card {
+  width: 190px;
+  height: 254px;
+  background: #07182E;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card h2 {
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  ;
+  inset: 5px;
+  border-radius: 15px;
+}  
+/* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
+
